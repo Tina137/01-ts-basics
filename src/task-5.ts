@@ -1,6 +1,6 @@
 type Pending = "loading" | "success" | "error";
 
-function logStatus(status: Pending) {
+function logStatus(status: Pending): void {
   if (status === "loading") {
     console.log("Loading...");
   } else if (status === "success") {
